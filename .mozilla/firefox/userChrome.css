@@ -89,3 +89,13 @@
   #urlbar[pageproxystate='valid'][focused="true"] #identity-box::after {
     background: var(--toolbar-bgcolor);
   }
+
+/*
+ * Disable the tab bar
+ * https://github.com/eoger/tabcenter-redux/wiki/Custom-CSS-Tweaks
+*/
+
+  #tabbrowser-tabs {
+    visibility: collapse;
+  }
+  
