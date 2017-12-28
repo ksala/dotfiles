@@ -355,3 +355,11 @@ user_pref("network.stricttransportsecurity.preloadlist",	true);
 
 // Accept third-party cookies from visited sites
 user_pref("network.cookie.cookieBehavior", 3);
+
+// For whatever reason OpenGL Off-Main-Thread Compositing remove tearing in fullscreen videos 
+// Youtube and Netflix for example
+// So force enable it
+// https://wiki.archlinux.org/index.php/Firefox#Tearing_video_in_fullscreen_mode
+// https://wiki.archlinux.org/index.php/Firefox/Tweaks#Enable_OpenGL_Off-Main-Thread_Compositing_.28OMTC.29
+// https://wiki.mozilla.org/Platform/GFX/OffMainThreadCompositing
+user_pref("layers.acceleration.force-enabled", true);
