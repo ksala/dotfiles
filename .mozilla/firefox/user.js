@@ -235,7 +235,6 @@ user_pref("browser.selfsupport.url", "");
 // https://wiki.mozilla.org/Security/Application_Reputation
 user_pref("browser.safebrowsing.downloads.remote.enabled",	false);
 
-
 // PREF: Disable SHIELD
 // https://support.mozilla.org/en-US/kb/shield
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1370801
@@ -363,3 +362,12 @@ user_pref("network.cookie.cookieBehavior", 3);
 // https://wiki.archlinux.org/index.php/Firefox/Tweaks#Enable_OpenGL_Off-Main-Thread_Compositing_.28OMTC.29
 // https://wiki.mozilla.org/Platform/GFX/OffMainThreadCompositing
 user_pref("layers.acceleration.force-enabled", true);
+
+// Disable safe-browsing
+// I know that it doesn't leak URLs to google
+// But it still leaks my IP from time to time
+// And I'm sure uBlock Origin and Common Sense 2018 has me covered already regarding malware
+// Also I don't think I've had any warnings in the last year or so
+user_pref("browser.safebrowsing.enabled",			false); // Firefox < 50
+user_pref("browser.safebrowsing.phishing.enabled",		false); // firefox >= 50
+user_pref("browser.safebrowsing.malware.enabled", false);
