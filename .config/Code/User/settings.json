@@ -57,5 +57,6 @@
         "haskell": "runhaskell",
         "nim": "nim compile --verbosity:0 --hints:off --run"
     },
-    "git.autofetch": true
+    "git.autofetch": true,
+    "git.confirmSync": false
 }

@@ -11,3 +11,7 @@ export GOPATH="$HOME/go/"
 
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# https://wiki.archlinux.org/index.php/Wine#Prevent_new_Wine_file_associations
+# I don't want to use Wine to open normal files!
+export WINEDLLOVERRIDES="winemenubuilder.exe=d"

@@ -371,3 +371,7 @@ user_pref("layers.acceleration.force-enabled", true);
 user_pref("browser.safebrowsing.enabled",			false); // Firefox < 50
 user_pref("browser.safebrowsing.phishing.enabled",		false); // firefox >= 50
 user_pref("browser.safebrowsing.malware.enabled", false);
+user_pref("safebrowsing.downloads.enabled", false);
+
+// Disable JavaScript Shared Memory / sharedBufferArray
+user_pref("javascript.options.shared_memory", false);
