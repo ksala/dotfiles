@@ -354,6 +354,9 @@ user_pref("network.stricttransportsecurity.preloadlist",	true);
 
 // Accept third-party cookies from visited sites
 user_pref("network.cookie.cookieBehavior", 3);
+// Throw away third-party cookies when restarting the browser
+// https://feeding.cloud.geek.nz/posts/tweaking-cookies-for-privacy-in-firefox/
+user_pref("network.cookie.thirdparty.sessionOnly", true);
 
 // For whatever reason OpenGL Off-Main-Thread Compositing remove tearing in fullscreen videos 
 // Youtube and Netflix for example
@@ -375,3 +378,7 @@ user_pref("safebrowsing.downloads.enabled", false);
 
 // Disable JavaScript Shared Memory / sharedBufferArray
 user_pref("javascript.options.shared_memory", false);
+
+// Trim cross-origin referrers
+// https://feeding.cloud.geek.nz/posts/tweaking-referrer-for-privacy-in-firefox/
+user_pref("network.http.referer.XOriginTrimmingPolicy", 2)
