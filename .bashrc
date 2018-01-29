@@ -16,3 +16,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # https://wiki.archlinux.org/index.php/Wine#Prevent_new_Wine_file_associations
 # I don't want to use Wine to open normal files!
 export WINEDLLOVERRIDES="winemenubuilder.exe=d"
+
+ssh() {
+	trap "tmux setw automatic-rename" RETURN INT
+	tmux rename-window "#[fg=green]ssh #[fg=blue]$*"
+	command ssh $*
+}
