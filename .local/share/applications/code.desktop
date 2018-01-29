@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Visual Studio Code
+GenericName=Editor
+Comment=Edit code
+Exec=/home/ksala/bin/VSCode-linux-x64/code
+Icon=/home/ksala/bin/VSCode-linux-x64/resources/app/resources/linux/code.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Editor;
+Keywords=Editor;
+Name[en_US]=code
