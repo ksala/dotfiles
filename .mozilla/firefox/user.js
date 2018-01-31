@@ -381,4 +381,4 @@ user_pref("javascript.options.shared_memory", false);
 
 // Trim cross-origin referrers
 // https://feeding.cloud.geek.nz/posts/tweaking-referrer-for-privacy-in-firefox/
-user_pref("network.http.referer.XOriginTrimmingPolicy", 2)
+user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
