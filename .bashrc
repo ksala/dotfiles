@@ -7,6 +7,8 @@ alias vi='nvim'
 alias ll='ls -lah'
 alias psfu="ps -fu$USER"
 
+alias vsshc="vssh -cyberark -sshpass -path $*"
+
 export GOPATH="$HOME/go/"
 export PATH="${HOME}/go/bin/:${PATH}"
 
@@ -20,5 +22,5 @@ export WINEDLLOVERRIDES="winemenubuilder.exe=d"
 ssh() {
 	trap "tmux setw automatic-rename" RETURN INT
 	tmux rename-window "#[fg=green]ssh #[fg=blue]$*"
-	command ssh $*
+	TERM=xterm command ssh $*
 }
