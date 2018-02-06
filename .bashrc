@@ -1,5 +1,8 @@
 [[ -f /usr/share/defaults/etc/profile ]] && . /usr/share/defaults/etc/profile
 
+shopt -s histappend
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+
 export EDITOR=nvim
 alias vim='nvim'
 alias vi='nvim'
