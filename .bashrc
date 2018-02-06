@@ -2,6 +2,8 @@
 
 shopt -s histappend
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+export HISTSIZE=-1
+export HISTFILESIZE=-1
 
 export EDITOR=nvim
 alias vim='nvim'
